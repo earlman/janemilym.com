@@ -1,0 +1,8 @@
+# Eleventy & markdown templates
+*.md linguist-detectable
+*.md -linguist-documentation
+README.md linguist-documentation
+
+# Hyde | Original files
+site/_themes/hyde/css/hyde.css -linguist-detectable
+site/_themes/hyde/css/poole.css -linguist-detectable
