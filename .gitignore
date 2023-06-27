@@ -2,6 +2,6 @@ node_modules/
 package-lock.json
 
 public/
-build/
+dist/
 .env*
 site/_themes/hyde/css/styles.min.css

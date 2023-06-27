@@ -23,8 +23,8 @@
     "dev:11ty": "eleventy --serve --incremental --quiet",
     "dev:css": "postcss site/_themes/$npm_package_config_theme/css/styles.css -o public/css/styles.min.css -w",
     "build": "npm run build:css && npm run build:11ty",
-    "prebuild": "rm -rf ./build",
-    "build:11ty": "NODE_ENV=production eleventy --output build --quiet --pathprefix $PATHPREFIX",
+    "prebuild": "rm -rf ./dist",
+    "build:11ty": "NODE_ENV=production eleventy --output dist --quiet --pathprefix $PATHPREFIX",
     "build:css": "NODE_ENV=production postcss site/_themes/$npm_package_config_theme/css/styles.css -o site/_themes/$npm_package_config_theme/css/styles.min.css -m",
     "prod-preview": "npx http-server build -o --gzip --brotli"
   },
