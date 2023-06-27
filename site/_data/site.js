@@ -1,7 +1,6 @@
 module.exports = {
-  title: "ECBS",
-  tagline: "Eleventy Classic Blog Starter",
-  url: process.env.URL || 'https://ecbs.com',
+  title: "Jan Emily M",
+  tagline: "PhD Candidate",
   time: Date.now(),
-  locale: "en-GB",
+  locale: "en-US",
 };
