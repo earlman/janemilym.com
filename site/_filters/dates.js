@@ -7,8 +7,7 @@ dayjs
 
 const
   dayjsLocales = { // dayjs sometimes don't use the right format!
-    'en-GB': 'en-gb',
-    // 'en-US': 'en',
+    'en-US': 'en',
   };
 
 Object.values(dayjsLocales).forEach(locale => require(`dayjs/locale/${locale}`));
