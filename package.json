@@ -52,6 +52,7 @@
   },
   "dependencies": {
     "@fontsource/abril-fatface": "^4.5.9",
-    "@fontsource/pt-sans": "^4.5.11"
+    "@fontsource/pt-sans": "^4.5.11",
+    "js-yaml": "^4.1.0"
   }
 }

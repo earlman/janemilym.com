@@ -1,3 +1,4 @@
+const yaml = require("js-yaml");
 require("dotenv").config();
 
 const glob = require("fast-glob"),
@@ -6,6 +7,13 @@ const glob = require("fast-glob"),
    theme = process.env.npm_package_config_theme;
 
 module.exports = (eleventyConfig) => {
+   // Merge data instead of overriding
+   eleventyConfig.setDataDeepMerge(true);
+
+   // To Support .yaml Extension in _data
+   // You may remove this if you can use JSON
+   eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
+
    // human readable date
    eleventyConfig.addFilter("formatDate", (dateObj) => {
       const months = [
