@@ -18,7 +18,7 @@ collections:
     files: # The fields for each document, usually in front matter
       - label: "Education"
         name: "Education"
-        file: "src/_data/cv.yaml"
+        file: "site/_data/cv.yaml"
         fields:
           - label: "Institutions"
             widget: "list"
