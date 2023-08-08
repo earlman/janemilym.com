@@ -1,6 +1,6 @@
 backend:
   # Use netlify identity as backend
-  branch: main
+  branch: master
   ### enable below lines for github integration ###
   name: github
   repo: foundations-design/janemilym
