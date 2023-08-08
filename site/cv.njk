@@ -1,0 +1,72 @@
+---
+title: "CV"
+---
+
+<div class="container max-w-4xl mt-6  px-6">
+  <div class="pb-5 mb-5 border-b border-gray-100">
+    <h1 class="font-bold text-5xl">{{title}}</h1>
+    <p class="text-center text-base leading-6 font-medium text-gray-500">
+      {# <time> {{ date | formatDate }} #}
+        <time> {{ date }}
+          by
+          <a>{{ author }}</a>
+
+        </time>
+    </p>
+
+  </div>
+  <article class="prose lg:prose-xl my-4 mx-auto">
+    <h2>Education</h2>
+    {% for edu in cv.Education %}
+    <h3>{{ edu.Degree }}</h3>
+    <p><strong>Institution:</strong> {{ edu.Institution }}</p>
+    <p><strong>Location:</strong> {{ edu.Location }}</p>
+    <p><strong>Duration:</strong> {{ edu.Duration }}</p>
+    {% if edu.GPA %}
+    <p><strong>GPA:</strong> {{ edu.GPA }}</p>
+    {% endif %}
+    <ul>
+      {% for detail in edu.Details %}
+      <li>{{ detail }}</li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+
+    <h2>Work Experience</h2>
+    {% for work in cv.WorkExperience %}
+    <h3>{{ work.Position }}</h3>
+    <p><strong>Institution:</strong> {{ work.Institution }}</p>
+    <p><strong>Location:</strong> {{ work.Location }}</p>
+    <p><strong>Duration:</strong> {{ work.Duration }}</p>
+    <ul>
+      {% for responsibility in work.Responsibilities %}
+      <li>{{ responsibility }}</li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+
+    <h2>Leadership Experience</h2>
+    {% for leadership in cv.LeadershipExperience %}
+    <h3>{{ leadership.Position }}</h3>
+    <p><strong>Institution:</strong> {{ leadership.Institution }}</p>
+    {% if leadership.Location %}
+    <p><strong>Location:</strong> {{ leadership.Location }}</p>
+    {% endif %}
+    <p><strong>Duration:</strong> {{ leadership.Duration }}</p>
+    <ul>
+      {% for responsibility in leadership.Responsibilities %}
+      <li>{{ responsibility }}</li>
+      {% endfor %}
+    </ul>
+    {% endfor %}
+
+    <h2>Skills</h2>
+    <ul>
+      {% for skill in cv.Skills %}
+      <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+
+  </article>
+
+</div>

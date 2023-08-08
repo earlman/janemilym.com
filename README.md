@@ -1,3 +1,7 @@
+- [ ] Home is about
+
+
+
 # eleventy-classic-blog-starter  ![GitHub last commit](https://img.shields.io/github/last-commit/tigersway/eleventy-classic-blog-starter?style=flat-square) ![GitHub issues](https://img.shields.io/github/issues/tigersway/eleventy-classic-blog-starter?style=flat-square)
 
 A starter repository for a "classic-themed" blog website using Eleventy.
