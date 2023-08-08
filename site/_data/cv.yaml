@@ -10,7 +10,7 @@ Education:
     Institution: Saint Louis University
     Location: St. Louis, MO
     Duration: August 2020 – Aug 2022
-    GPA: 4.00 / 4.00
+    gpa: 4.00 / 4.00
     Details:
       - "Thesis: Development and Evaluation of a Force-Controlled Robotic System
         for Echocardiogram Procedures"
@@ -19,7 +19,7 @@ Education:
     Institution: Saint Louis University
     Location: St. Louis, MO
     Duration: Aug 2017 – May 2021
-    GPA: 3.90 / 4.00
+    gpa: 3.90 / 4.00
     Details:
       - Summa cum laude
       - Dean’s List, all semesters

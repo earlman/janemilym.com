@@ -10,8 +10,7 @@
     "hyde-theme"
   ],
   "version": "2.0.1",
-  "license": "MIT",
-  "author": "Ben Michaud <ben@tigersway.net>",
+  "author": "Earl Justin M <contact@earljman.dev>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TigersWay/eleventy-classic-blog-starter.git"
@@ -26,7 +25,8 @@
     "prebuild": "rm -rf ./dist",
     "build:11ty": "NODE_ENV=production eleventy --output dist --quiet --pathprefix $PATHPREFIX",
     "build:css": "NODE_ENV=production postcss site/_themes/$npm_package_config_theme/css/styles.css -o site/_themes/$npm_package_config_theme/css/styles.min.css -m",
-    "prod-preview": "npx http-server build -o --gzip --brotli"
+    "prod-preview": "npx http-server build -o --gzip --brotli",
+    "dev": "yarn start"
   },
   "config": {
     "theme": "hyde"
