@@ -153,11 +153,14 @@ module.exports = (eleventyConfig) => {
    // Passthrough
    if (process.env.NODE_ENV === "production")
       eleventyConfig.addPassthroughCopy({ "site/static": "." }); // Only one per destination folder, next is better for dev
-   eleventyConfig.addPassthroughCopy({ [`site/_themes/${theme}/static`]: "." });
+
    eleventyConfig.addPassthroughCopy({
+      [`site/_themes/${theme}/static`]: ".",
       "node_modules/@fontsource/{abril-fatface,pt-sans}/files/{abril-fatface,pt-sans}-latin-{400,700}*.woff2":
          "css/files",
+      "site/admin/config.yml": "admin/config.yml",
    });
+
    eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 
    // Globals
@@ -167,9 +170,9 @@ module.exports = (eleventyConfig) => {
    );
 
    return {
-      templateFormats: ["md", "njk"],
+      templateFormats: ["md", "njk", "html"],
       markdownTemplateEngine: "njk",
-
+      htmlTemplateEngine: "njk",
       dir: {
          input: "./site",
          includes: `_themes/${theme}/layouts`,
