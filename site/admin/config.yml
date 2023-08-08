@@ -4,7 +4,7 @@ backend:
   ### enable below lines for github integration ###
   name: github
   repo: foundations-design/janemilym
-media_folder: "src/static/img"
+media_folder: "site/static/img"
 public_folder: "/static/img"
 
 # Please run "npx netlify-cms-proxy-server" for local backend
