@@ -5,3 +5,6 @@ public/
 dist/
 .env*
 site/_themes/hyde/css/styles.min.css
+
+# Local Netlify folder
+.netlify

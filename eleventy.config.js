@@ -130,7 +130,7 @@ module.exports = (eleventyConfig) => {
 
    // Collections
    eleventyConfig.addCollection("pages", (collectionApi) =>
-      collectionApi.getFilteredByGlob("./site/pages/**/*.md")
+      collectionApi.getFilteredByGlob("./site/pages/**/*")
    );
    eleventyConfig.addCollection("posts", (collectionApi) =>
       collectionApi.getFilteredByGlob("./site/posts/**/*.md")
