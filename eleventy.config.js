@@ -1,6 +1,8 @@
 const yaml = require("js-yaml");
 require("dotenv").config();
 
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
+
 const glob = require("fast-glob"),
    hljs = require("highlight.js"),
    projectName = process.env.npm_package_name,
@@ -37,6 +39,8 @@ module.exports = (eleventyConfig) => {
 
       return `${day} ${month} ${year}`;
    });
+
+   eleventyConfig.addPlugin(EleventyRenderPlugin);
 
    // Engine: Markdown & plugins
    const Markdown = require("markdown-it")({

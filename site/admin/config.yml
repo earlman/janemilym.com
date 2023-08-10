@@ -17,6 +17,13 @@ collections:
     # folder: "_resume" # The path to the folder where the documents are stored
     # create: true # Allow users to create new documents in this collection
     files: # The fields for each document, usually in front matter
+      - name: "home"
+        label: "Home"
+        file: "site/_data/indexContent.md"
+        fields: 
+          - widget: "markdown"
+            label: "content"
+            name: "body"
       - name: "cv"
         label: "CV"
         file: "site/_data/cv.yaml"
@@ -52,7 +59,6 @@ collections:
           - label: "Skills"
             name: "Skills"
             widget: "list"
-
   # - label: "Blog"
   #   name: "blog"
   #   folder: "src/posts"
