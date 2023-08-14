@@ -59,6 +59,11 @@ collections:
           - label: "Skills"
             name: "Skills"
             widget: "list"
+      - name: "theme"
+        label: "Theme"
+        file: "site/_data/theme.yaml"
+        fields: 
+          - {label: Sidebar Color", name: "sidebarColor", widget: "color", allowInput: true, hint: "Accepts color in any HTML-friendly format, including [color names (link)](https://www.w3schools.com/tags/ref_colornames.asp)"}
   # - label: "Blog"
   #   name: "blog"
   #   folder: "src/posts"

@@ -6,6 +6,10 @@
 
 @import "highlight.js/styles/github-dark.css";
 
+:root {
+   --color-sidebar: #8e560c;
+}
+
 /* article {content-visibility: auto;} */
 article img {
    width: 100%;
@@ -47,7 +51,7 @@ code {
 
 /* As base-16 colors had to be reset */
 .theme-base-0b .sidebar {
-   background-color: #8e560c;
+   background-color: var(--color-sidebar);
 }
 .theme-base-0b .content a,
 .theme-base-0b .related-posts li a:hover {

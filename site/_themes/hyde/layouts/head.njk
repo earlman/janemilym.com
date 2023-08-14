@@ -10,4 +10,10 @@
 
   {% if isProduction %}<style>{% include "../css/styles.min.css" %}</style>{% else %}<link rel="stylesheet" href="/css/styles.min.css">{% endif %}
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feeds.xml">
+  <style>
+    :root {
+        --color-sidebar: {{theme.sidebarColor}};
+    }
+</style>
+
 </head>
