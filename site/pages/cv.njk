@@ -2,61 +2,102 @@
 title: "CV"
 ---
 <style>
-  article {
-    background-color: blue;
+  @media (min-width: 48em) {
+    .content.container {
+      max-width: unset;
+    }
+
+    .cv section {
+      display: grid;
+      grid-template-columns: 20ch 1fr 20ch;
+      gap: 0 5rem;
+      margin-bottom: 4rem;
+    }
+
+    .cv h2 {
+      grid-row: 1 / 100;
+      grid-column: 1;
+      margin: 0;
+    }
   }
 </style>
-<article class="prose lg:prose-xl my-4 mx-auto">
-  <h2>Education</h2>
-  {% for edu in cv.Education %}
-  <h3>{{ edu.Degree }}</h3>
-  <p><strong>Institution:</strong> {{ edu.Institution }}</p>
-  <p><strong>Location:</strong> {{ edu.Location }}</p>
-  <p><strong>Duration:</strong> {{ edu.Duration }}</p>
-  {% if edu.GPA %}
-  <p><strong>GPA:</strong> {{ edu.GPA }}</p>
-  {% endif %}
-  <ul>
-    {% for detail in edu.Details %}
-    <li>{{ detail }}</li>
-    {% endfor %}
-  </ul>
+<article class="cv">
+  <section class="education-section">
+    <h2 class="education-title">Education</h2>
+    {% for edu in cv.Education %}
+    <div class="education-entry">
+      <p>
+        <strong class="education-degree">{{ edu.Degree }}</strong>, <em class="education-institution">{{
+          edu.Institution }}</em>, <span class="education-location">{{ edu.Location }}</span>.
+      </p>
+      {% if edu.gpa %}
+      <p class="education-gpa">GPA: {{ edu.gpa }}</p>
+      {% endif %}
+      <ul class="education-details-list">
+        {% for detail in edu.Details %}
+        <li class="education-detail-item">{{ detail }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="education-duration"">
+      {{ edu.Duration }}
+    </div>
   {% endfor %}
+  </section>
+  
+  <section class=" work-experience-section">
+      <h2 class="work-experience-title">Work Experience</h2>
+      {% for work in cv.WorkExperience %}
+      <div class="work-experience-entry">
+        <p>
+          <strong class="work-experience-position">{{ work.Position }}</strong>, <em
+            class="work-experience-institution">{{
+            work.Institution }}</em>, <span class="work-experience-location">{{ work.Location }}</span>.
+        </p>
+        <ul class="work-experience-responsibilities-list">
+          {% for responsibility in work.Responsibilities %}
+          <li class="work-experience-responsibility-item">{{ responsibility }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="work-experience-duration">
+        {{ work.Duration }}
+      </div>
+      {% endfor %}
+  </section>
 
-  <h2>Work Experience</h2>
-  {% for work in cv.WorkExperience %}
-  <h3>{{ work.Position }}</h3>
-  <p><strong>Institution:</strong> {{ work.Institution }}</p>
-  <p><strong>Location:</strong> {{ work.Location }}</p>
-  <p><strong>Duration:</strong> {{ work.Duration }}</p>
-  <ul>
-    {% for responsibility in work.Responsibilities %}
-    <li>{{ responsibility }}</li>
+  <section class="leadership-experience-section">
+    <h2 class="leadership-experience-title">Leadership Experience</h2>
+    {% for leadership in cv.LeadershipExperience %}
+    <div class="leadership-experience-entry">
+      <p>
+        <strong class="leadership-experience-position">{{ leadership.Position }}</strong>, <em
+          class="leadership-experience-institution">{{ leadership.Institution }}</em>
+        {% if leadership.Location %}
+        , <span class="leadership-experience-location">{{ leadership.Location }}</span>
+        {% endif %}.
+      </p>
+      <ul class="leadership-experience-responsibilities-list">
+        {% for responsibility in leadership.Responsibilities %}
+        <li class="leadership-experience-responsibility-item">{{ responsibility }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="leadership-experience-duration">
+      {{ leadership.Duration }}
+    </div>
     {% endfor %}
-  </ul>
-  {% endfor %}
-
-  <h2>Leadership Experience</h2>
-  {% for leadership in cv.LeadershipExperience %}
-  <h3>{{ leadership.Position }}</h3>
-  <p><strong>Institution:</strong> {{ leadership.Institution }}</p>
-  {% if leadership.Location %}
-  <p><strong>Location:</strong> {{ leadership.Location }}</p>
-  {% endif %}
-  <p><strong>Duration:</strong> {{ leadership.Duration }}</p>
-  <ul>
-    {% for responsibility in leadership.Responsibilities %}
-    <li>{{ responsibility }}</li>
-    {% endfor %}
-  </ul>
-  {% endfor %}
-
-  <h2>Skills</h2>
-  <ul>
-    {% for skill in cv.Skills %}
-    <li>{{ skill }}</li>
-    {% endfor %}
-  </ul>
+  </section>
+  <section class="skills-section">
+    <h2>Skills</h2>
+    <div>
+      <ul>
+        {% for skill in cv.Skills %}
+        <li>{{ skill }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
 
 </article>
 
