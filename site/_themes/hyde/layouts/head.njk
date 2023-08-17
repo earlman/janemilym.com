@@ -10,10 +10,13 @@
 
   {% if isProduction %}<style>{% include "../css/styles.min.css" %}</style>{% else %}<link rel="stylesheet" href="/css/styles.min.css">{% endif %}
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feeds.xml">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Old+Standard+TT&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
         --color-sidebar: {{theme.sidebarColor}};
         --color-heading: {{theme.headingColor}};
+        --font-secondary: "Crimson Text";
+        --font-primary: "Open Sans";
     }
 </style>
 
