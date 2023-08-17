@@ -75,6 +75,24 @@ collections:
           - label: "Skills"
             name: "Skills"
             widget: "list"
+      - name: "social"
+        label: "Social Links"
+        file: "_data/social.yaml"
+        fields:
+          - label: "Social Links"
+            name: "links"
+            widget: "list"
+            fields:
+              - label: "Icon"
+                name: "image"
+                widget: "image"
+                media_library:
+                  config:
+                    multiple: false
+              - label: "URL"
+                name: "url"
+                widget: "string"
+
   # - label: "Blog"
   #   name: "blog"
   #   folder: "src/posts"

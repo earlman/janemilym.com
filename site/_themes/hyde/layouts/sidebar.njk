@@ -1,5 +1,12 @@
 <div role="region" class="sidebar">
   <div class="container sidebar-sticky">
+
+    {% for link in site.data.social.links %}
+    <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ site.baseurl }}/static/image/{{ link.image }}" alt="Social Icon">
+    </a>
+    {% endfor %}
+
     <div class="sidebar-about">
       <h1><a href="/">{{ site.name }}</a></h1>
       <p class="lead">{{ site.title }}</p>
