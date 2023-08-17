@@ -5,7 +5,7 @@ backend:
   name: github
   repo: foundations-design/janemilym
 media_folder: "site/static/img"
-public_folder: "/static/img"
+public_folder: "/img"
   
 # Please run "npx netlify-cms-proxy-server" for local backend
 # Requires Netlify Config at "Site Configuration -> Build & Deploy -> Deploy Notifications"

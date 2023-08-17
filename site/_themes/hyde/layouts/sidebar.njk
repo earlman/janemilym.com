@@ -1,12 +1,6 @@
 <div role="region" class="sidebar">
   <div class="container sidebar-sticky">
 
-    {% for link in site.data.social.links %}
-    <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-      <img src="{{ site.baseurl }}/static/image/{{ link.image }}" alt="Social Icon">
-    </a>
-    {% endfor %}
-
     <div class="sidebar-about">
       <h1><a href="/">{{ site.name }}</a></h1>
       <p class="lead">{{ site.title }}</p>
@@ -21,6 +15,12 @@
       {# <a class="sidebar-nav-item" href="{{ pkg.homepage }}" rel="noopener" target="_blank">GitHub project</a> #}
       {# <span class="sidebar-nav-item">Currently v{{ pkg.version }}</span> #}
     </nav>
+
+    {% for link in social.links %}
+    <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+      <img src="{{ link.image }}" alt="Social Icon">
+    </a>
+    {% endfor %}
 
     <p>&copy; {{ site.time | dateFormat('YYYY') }} All rights reserved.</p>
   </div>
