@@ -57,3 +57,15 @@ code {
 .theme-base-0b .related-posts li a:hover {
    color: #690900;
 }
+
+.copyright {
+   bottom: 0;
+   right: 2rem;
+   opacity: 0.5;
+   text-align: right;
+   margin-right: 2rem;
+}
+
+.post-title {
+   margin-bottom: 2rem;
+}
