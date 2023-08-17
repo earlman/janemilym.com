@@ -1,13 +1,3 @@
-Work Log
-
-- [x] Apply config from 11ty Academic to janemilym.github.io
-    - [x] See if Jem can log in to CMS!!
-    - [x] Cv page
-    - [x] link in header
-    - [x] home page markdown 
-
----
-
 # eleventy-classic-blog-starter  ![GitHub last commit](https://img.shields.io/github/last-commit/tigersway/eleventy-classic-blog-starter?style=flat-square) ![GitHub issues](https://img.shields.io/github/issues/tigersway/eleventy-classic-blog-starter?style=flat-square)
 
 A starter repository for a "classic-themed" blog website using Eleventy.
