@@ -67,7 +67,7 @@ collections:
         label: "Theme"
         fields: 
           - {label: "Sidebar Color", name: "sidebarColor", widget: "color", allowInput: true, hint: "Accepts color in any HTML-friendly format, including [color names (link)](https://www.w3schools.com/tags/ref_colornames.asp)"}
-          - {label: "Header Color", name: "headerColor", widget: "color", allowInput: true, hint: "Accepts color in any HTML-friendly format, including [color names (link)](https://www.w3schools.com/tags/ref_colornames.asp)"}
+          - {label: "Header Color", name: "headingColor", widget: "color", allowInput: true, hint: "Accepts color in any HTML-friendly format, including [color names (link)](https://www.w3schools.com/tags/ref_colornames.asp)"}
   # - label: "Blog"
   #   name: "blog"
   #   folder: "src/posts"
