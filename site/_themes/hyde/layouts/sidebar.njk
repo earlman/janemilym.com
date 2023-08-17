@@ -16,11 +16,13 @@
       {# <span class="sidebar-nav-item">Currently v{{ pkg.version }}</span> #}
     </nav>
 
-    {% for link in social.links %}
-    <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
-      <img src="{{ link.image }}" alt="Social Icon">
-    </a>
-    {% endfor %}
+    <div class="social sidebar-nav-item">
+      {% for link in social.links %}
+      <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">
+        <img src="{{ link.image }}" alt="Social Icon">
+      </a>
+      {% endfor %}
+    </div>
 
   </div>
 </div>
