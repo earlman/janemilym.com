@@ -26,6 +26,14 @@ collections:
     # folder: "_resume" # The path to the folder where the documents are stored
     # create: true # Allow users to create new documents in this collection
     files: # The fields for each document, usually in front matter
+      - name: "Project"
+        label: "project"
+        folder: "site/projects"
+        create: true
+        fields:
+          - {label: "Profile Picture", name: "pic", widget: "image", required: false}
+          - { label: "Title", name: "title", widget: "string" }
+          - {label: "Description", name: "description", widget: "markdown"}
       - name: "site"
         label: "Site Settings (Name, Title, Profile Picture)"
         file: "site/_data/site.yaml"
