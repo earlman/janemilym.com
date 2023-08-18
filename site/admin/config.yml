@@ -99,4 +99,4 @@ collections:
     fields:
       - {label: "Profile Picture", name: "pic", widget: "image", required: false}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Description", name: "body", widget: "string"}
