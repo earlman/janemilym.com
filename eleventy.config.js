@@ -135,6 +135,9 @@ module.exports = (eleventyConfig) => {
    eleventyConfig.addCollection("posts", (collectionApi) =>
       collectionApi.getFilteredByGlob("./site/posts/**/*.md")
    );
+   eleventyConfig.addCollection("projects", (collectionApi) =>
+      collectionApi.getFilteredByGlob("./site/projects/**/*.md")
+   );
 
    if (process.env.NODE_ENV === "production") {
       // Transform : html-minifier
