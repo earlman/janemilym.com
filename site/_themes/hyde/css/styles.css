@@ -93,3 +93,10 @@ code {
       width: 2rem;
    }
 }
+
+.profile_pic {
+   width: 100%;
+   max-width: 300px;
+   margin: auto;
+   margin-bottom: 2rem;
+}
