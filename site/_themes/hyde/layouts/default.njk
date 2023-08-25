@@ -14,7 +14,10 @@
   {% endblock %}
 
   <div class="copyright-container">
-    <p class="copyright">&copy; {{ site.time | dateFormat('YYYY') }} All rights reserved.</p>
+    <p class="copyright">Built with <a target="_blank" href="https://academic.foundations.design">Foundations Design</a>
+      &copy;
+      {{
+      site.time | dateFormat('YYYY') }} All rights reserved.</p>
   </div>
 </body>
 

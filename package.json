@@ -31,6 +31,7 @@
   "config": {
     "theme": "hyde"
   },
+  "type": "module",
   "devDependencies": {
     "@11ty/eleventy": "2.0.0",
     "concurrently": "^7.6.0",
@@ -53,6 +54,7 @@
   "dependencies": {
     "@fontsource/abril-fatface": "^4.5.9",
     "@fontsource/pt-sans": "^4.5.11",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "pureimage": "^0.4.8"
   }
 }
