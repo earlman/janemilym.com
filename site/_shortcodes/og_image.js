@@ -67,12 +67,12 @@ function generateOGImageFromText(
    colorText
 ) {
    if (imageExists(outputPath)) {
-      return `<meta property="og:image" content="/img/og_image.png">`;
+      return `<meta property="og:image" content="/og_image.png">`;
    }
 
    const img = createOGImageCanvas(textName, textTitle, colorBg, colorText);
    saveImageToDisk(img, outputPath);
-   return `<meta property="og:image" content="/img/og_image.png">`;
+   return `<meta property="og:image" content="/og_image.png">`;
 }
 
 module.exports = {
