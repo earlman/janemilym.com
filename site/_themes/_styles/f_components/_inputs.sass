@@ -1,0 +1,97 @@
+@use '../d_spacing/_space-sizes' as *
+@use '../d_spacing/_helpers' as *
+
+button
+   padding: var(--space-2xs) var(--space-sm)
+   color: var(--color-p)
+   font-weight: 600
+   font-size: 1rem
+   letter-spacing: .02em
+   text-transform: uppercase
+   border: 3px solid var(--color-p)
+   background-color: var(--color-b)
+   box-sizing: border-box
+   border-radius: 3px
+   transition: .2s
+   margin-bottom: 4px
+   transform: translateX(-2px) translateY(3px)
+
+button:hover
+   box-shadow: -6px 4px 0 var(--color-boxshadow)
+   border: 3px solid var(--color-t)
+    // background: var(--color-a)
+   cursor: pointer
+   transform: translateX(0) translateY(0)
+   color: var(--color-t)
+
+input[type="email"], textarea
+   padding: var(--space-2xs) var(--space-xs)
+   width: 40ch
+   border: 3px solid var(--color-t)
+   box-shadow: -6px 4px 0 var(--color-boxshadow)
+   border-radius: 3px
+   background: #F1EDEA
+   max-width: 100%
+
+label
+   color: var(--color-p)
+   text-transform: uppercase
+   font-weight: 600
+
+/* Custom Checkboxes */
+
+.checkbox
+   @include space-stack(6px)
+
+   // hide browser's default checkbox
+   input[type="checkbox"]
+      opacity: 0
+      position: absolute
+
+   label
+      display: inline-block
+      padding-left: var(--space-md)
+
+   // box
+   label::before
+      content: ""
+      display: inline-block
+      border: 3px solid var(--color-t)
+      border-radius: 3px
+      box-shadow: -3px 3px 0px var(--color-a)
+      height: 20px
+      width: 20px
+      box-sizing: border-box
+
+   // checkmark
+   label::after
+      content: ""
+      display: inline-block
+      height: 8px
+      width: 8px
+      background-color: var(--color-t)
+      border-radius: 1px
+      box-sizing: border-box
+
+   input[type="checkbox"] + label::after
+      content: none
+
+   input[type="checkbox"]:checked + label::after
+      content: ""
+
+// position
+.checkbox
+   label
+      position: relative
+
+   label::before, label::after
+      position: absolute
+      display: inline-block
+
+   label::before
+      top: 4px
+      left: 0px
+
+   label::after
+      top: 10px
+      left: 6px

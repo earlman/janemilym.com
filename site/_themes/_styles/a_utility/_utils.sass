@@ -1,0 +1,46 @@
+
+/**
+ *
+ * This stylesheet will contain HIGH-LEVEL global styles
+    * Rules:
+    * 1) styles MUST be applied directly to HTML tags
+    * 2) each style addition should be in a commented section
+         * Comments should be written like assertions
+ *
+ */
+
+
+
+
+/*----------  All elements should have no margin as default ----------*/
+*
+    margin: 0
+
+/*---------- All elements should use border-box box-sizing------------*/
+*, *::before, *::after
+    box-sizing: border-box
+
+/*---------- Lists in a `nav` element should not have bullets ------------*/
+nav ul *
+    list-style: none
+   
+/*---------- Height should be set on HTML and body to allow heights to be set more easily (idk how well this works) ------------*/
+html, body
+    height: min-content
+
+/*---------- Media elements should fit inside their container  ------------*/
+/*---------- Media elements should not be inline elements  ------------*/
+img, picture, video, canvas, svg
+    display: block
+    max-width: 100%
+
+/*---------- Form controls should inherit their fonts ------------*/
+input, button, textarea, select 
+    font: inherit
+
+
+/*---------- Long words should be allowed to wrap to the next line, if necessary ------------*/
+/*---------- src: https://www.joshwcomeau.com/css/custom-css-reset/#digit-root-stacking-context ------------*/
+p, h1, h2, h3, h4, h5, h6
+    overflow-wrap: break-word
+

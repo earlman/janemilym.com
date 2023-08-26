@@ -1,0 +1,84 @@
+/*----------  Import Media Queries to set Responsive Font Sizes  ----------*/
+@use "../e_layout/media"    
+
+\:root
+
+    /*============================================*/
+    /*             Set Type Scale Variables       */
+    /*============================================*/  
+
+    /*----------  Set Base Font Sizes  ----------*/
+
+    --d-base-font-size: 16px
+    --m-base-font-size: 16px
+
+    /*----------  Set Type Scale Multipliers  ----------*/
+
+    --d-multiplier: 1.333
+    --m-multiplier: 1.250
+
+    /*=============================================
+    /*               Type Scale                   =
+    /*============================================*/
+
+    /*----------  Desktop Scale  ----------*/
+
+    /* 0.563rem, 10.13px */ 
+    --d-xs: calc(var(--d-base-font-size) / (var(--d-multiplier) * var(--d-multiplier)))
+    /* 0.750rem, 13.50px */
+    --d-sm: calc(var(--d-base-font-size) / var(--d-multiplier))
+    /* 1.000rem, 18.00px */
+    --d-md: calc(var(--d-base-font-size))
+    /* 1.333rem, 23.99px */
+    --d-lg: calc(var(--d-base-font-size) * var(--d-multiplier))
+    /* 1.777rem, 31.98px */
+    --d-xl: calc(var(--d-base-font-size) * var(--d-multiplier) * var(--d-multiplier))
+    /* 2.369rem, 42.63px */
+    --d-2xl: calc(var(--d-base-font-size) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier))
+    /* 3.157rem, 56.83px */
+    --d-3xl: calc(var(--d-base-font-size) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier))
+    /* 4.209rem, 75.76px */
+    --d-4xl: calc(var(--d-base-font-size) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier) * var(--d-multiplier))
+
+    /*----------  Mobile Scale  ----------*/
+
+    /* 0.640rem, 10.24px */
+    --m-xs: calc(var(--m-base-font-size) / (var(--m-multiplier) * var(--m-multiplier)))
+    /* 0.800rem, 12.80px */
+    --m-sm: calc(var(--m-base-font-size) / var(--m-multiplier))
+    /* 1.000rem, 16.00px */
+    --m-md: calc(var(--m-base-font-size))
+    /* 1.250rem, 20.00px */
+    --m-lg: calc(var(--m-base-font-size) * var(--m-multiplier))
+    /* 1.563rem, 25.00px */
+    --m-xl: calc(var(--m-base-font-size) * var(--m-multiplier) * var(--m-multiplier))
+    /* 1.953rem, 31.25px */
+    --m-2xl: calc(var(--m-base-font-size) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier))
+    /* 2.441rem, 39.06px */
+    --m-3xl: calc(var(--m-base-font-size) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier))
+    /* 3.052rem, 48.83px */
+    --m-4xl: calc(var(--m-base-font-size) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier) * var(--m-multiplier))
+
+/*----------  Set font-size on html (responsively)  ----------*/
+html
+    font-size: var(--m-base-font-size)
+    @include media.md
+        font-size: var(--d-base-font-size)
+
+/*==========================================================
+/*=       Create Mixins to include Responsive Sizes        =
+/*=========================================================*/
+
+@mixin text($size)
+    font-size: var(--m-#{$size})
+    @include media.md
+        font-size: var(--d-#{$size})
+
+// example of compiled CSS:
+// @include media-md 
+// compiles to
+//
+// @mixin text-xs
+//     font-size: var(--m-xs)
+//     @include media-md
+//         font-size: var(--d-xs)

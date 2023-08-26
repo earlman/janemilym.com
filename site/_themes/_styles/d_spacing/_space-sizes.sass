@@ -1,0 +1,24 @@
+\:root
+    
+    /*=============================================*/
+    /*=            Spacing Variables              =*/
+    /*=============================================*/
+    // Keep spacing under elements
+    // Use this for vertical spacing and with mixins
+    // See _layout.sass for horizontal spacing
+    
+    --space-unit: 1rem
+
+    --space-3xs: calc(var(--space-unit) / 3) 
+    --space-2xs: calc(2 * var(--space-unit) / 3)
+    --space-xs: var(--space-unit)
+    --space-sm: calc(var(--space-2xs) + var(--space-xs))
+    --space-md: calc(var(--space-xs) + var(--space-sm))
+    --space-lg: calc(var(--space-sm) + var(--space-md))
+    --space-xl: calc(var(--space-md) + var(--space-lg))
+    --space-2xl: calc(var(--space-lg) + var(--space-xl))
+    --space-3xl: calc(var(--space-xl) + var(--space-2xl))
+
+// Docs:
+/* https://github.com/CodyHouse/codyhouse-framework */
+// * using rem because vertical rhythm is more important than the 'ex' measurement

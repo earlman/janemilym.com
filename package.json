@@ -53,7 +53,10 @@
   "dependencies": {
     "@fontsource/abril-fatface": "^4.5.9",
     "@fontsource/pt-sans": "^4.5.11",
+    "browserslist": "^4.21.10",
     "js-yaml": "^4.1.0",
-    "pureimage": "^0.4.8"
+    "lightningcss": "^1.21.7",
+    "pureimage": "^0.4.8",
+    "sass": "^1.66.1"
   }
 }

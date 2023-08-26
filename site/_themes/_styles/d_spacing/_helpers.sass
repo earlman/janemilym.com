@@ -1,0 +1,43 @@
+@use "sass:math"
+
+/*=============================================*/
+/*=              Define Variables             =*/
+/*=============================================*/
+
+// TODO: Fix implementation syntax to directly use spacing variables
+// ex. space-inset(md)
+// currently must enter it manually
+
+$squishing-ratio: 2
+// = ex. padding: 12px 8px 12px 8px
+$stretching-ratio: math.div(3,2)
+
+//  SPACE-INSET: For interface containers.
+//  SPACE-SQUISH: For buttons, table cells.
+//  STACK-SPACE: For vertically stacked content.
+//  SPACE-INLINE For things displayed inline.
+//  SPACE-STRETCH: For forms, textboxes.
+
+// Create inset-space
+@mixin space-inset($value)
+   padding: $value
+
+// Create inset-squish-space
+@mixin space-squish($value)
+   padding: round(math.div($value, $squishing-ratio)) $value round(math.div($value , $squishing-ratio))
+
+// Create inset-stretch-space
+@mixin space-stretch($value)
+   padding: $value round(math.div($value, $stretching-ratio)) $value
+
+// Create stack-space
+@mixin space-stack($value)
+   margin-bottom: $value
+   &:last-child
+      margin-bottom: 0
+
+// Create space-inline
+@mixin space-inline($value)
+   margin-right: $value
+   &:last-child
+      margin-right: 0

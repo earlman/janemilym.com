@@ -1,0 +1,52 @@
+@use 'text-sizes' as *
+@use '../e_layout/_layout' as *
+@use '../d_spacing/_space-sizes' as *
+
+\:root
+   --font-primary: 'Alegreya Sans'
+   --font-secondary: 'Fraunces Variable'
+
+*
+   font-family: var(--font-primary)
+   color: var(--color-t)
+   font-weight: 400
+
+html
+   line-height: 1.6
+
+b, strong
+   font-weight: bold
+
+h1, h2, h3, h4, h5, h6
+   font-family: var(--font-secondary)
+   color: var(--color-t-h)
+   font-weight: 400
+
+   *
+      font-family: inherit
+      color: inherit
+      font-weight: inherit
+
+a
+   text-decoration: none
+   color: var(--color-p)
+
+// limit width of text for legibility
+p, ul
+   max-width: var(--text-max-width)
+
+.display-text
+   font-size: 16rem
+   font-family: var(--font-secondary)
+   font-variation-settings: "WONK" 0, "opsz" 77, "SOFT" 0, "wght" 500
+   letter-spacing: -0.03ch
+   fill: none
+   stroke: var(--color-b2)
+   color: var(--color-t2)
+
+h1, h2
+   font-variation-settings: "WONK" 0, "opsz" 77, "SOFT" 0, "wght" 363
+   font-size: var(--d-3xl)
+   letter-spacing: -0.04rem
+   line-height: 1
+   color: var(--color-t6)
