@@ -81,7 +81,7 @@ module.exports = (eleventyConfig) => {
    });
 
    // Filters
-   glob.sync("./site/_filters/*.js").forEach((file) => {
+   glob.sync("./_filters/*.js").forEach((file) => {
       let filters = require("./" + file);
       Object.keys(filters).forEach((name) =>
          eleventyConfig.addFilter(name, filters[name])
@@ -89,7 +89,7 @@ module.exports = (eleventyConfig) => {
    });
 
    // Shortcodes
-   glob.sync("./site/_shortcodes/*.js").forEach((file) => {
+   glob.sync("./_shortcodes/*.js").forEach((file) => {
       let shortcodes = require("./" + file);
       Object.keys(shortcodes).forEach((name) =>
          eleventyConfig.addShortcode(name, shortcodes[name])
@@ -97,7 +97,7 @@ module.exports = (eleventyConfig) => {
    });
 
    // PairedShortcodes
-   glob.sync("./site/_pairedShortcodes/*.js").forEach((file) => {
+   glob.sync("./_pairedShortcodes/*.js").forEach((file) => {
       let pairedShortcodes = require("./" + file);
       Object.keys(pairedShortcodes).forEach((name) =>
          eleventyConfig.addPairedShortcode(name, pairedShortcodes[name])
