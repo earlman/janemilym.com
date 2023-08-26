@@ -58,13 +58,28 @@ code {
    color: #690900;
 }
 
+.copyright-container {
+   display: flex;
+   justify-content: flex-end;
+}
+
 .copyright {
    right: 2rem;
    opacity: 0.5;
-   text-align: right;
    margin-right: 1rem;
    margin-bottom: 1.5rem;
    font-size: 0.8rem;
+   display: flex;
+   align-items: center;
+}
+
+.copyright .logo {
+   height: 1em;
+}
+
+.copyright .logo svg {
+   height: 100%;
+   width: 100%;
 }
 
 .post-title {

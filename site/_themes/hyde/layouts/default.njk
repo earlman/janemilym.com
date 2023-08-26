@@ -14,10 +14,12 @@
   {% endblock %}
 
   <div class="copyright-container">
-    <p class="copyright">Built with <a target="_blank" href="https://academic.foundations.design">Foundations Design</a>
-      &copy;
-      {{
-      site.time | dateFormat('YYYY') }} All rights reserved.</p>
+    <p class="copyright">
+      &copy; {{site.time | dateFormat('YYYY')}} All rights reserved.
+      Built with&nbsp;<a target="_blank" href="https://referral.foundations.design/janemilym"> Foundations
+        Design&nbsp;</a>
+      {# <span class="logo">{% include "foundations-logo.svg" %}</span> #}
+    </p>
   </div>
 </body>
 
