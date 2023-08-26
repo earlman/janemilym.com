@@ -16,30 +16,6 @@ module.exports = (eleventyConfig) => {
    // You may remove this if you can use JSON
    eleventyConfig.addDataExtension("yaml", (contents) => yaml.load(contents));
 
-   // human readable date
-   eleventyConfig.addFilter("formatDate", (dateObj) => {
-      const months = [
-         "Jan",
-         "Feb",
-         "Mar",
-         "Apr",
-         "May",
-         "Jun",
-         "Jul",
-         "Aug",
-         "Sep",
-         "Oct",
-         "Nov",
-         "Dec",
-      ];
-
-      const day = dateObj.getUTCDate();
-      const month = months[dateObj.getUTCMonth()];
-      const year = dateObj.getUTCFullYear();
-
-      return `${day} ${month} ${year}`;
-   });
-
    eleventyConfig.addPlugin(EleventyRenderPlugin);
 
    // Engine: Markdown & plugins
