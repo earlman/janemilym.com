@@ -3,7 +3,7 @@
 {% block content %}
 {% renderFile "./site/_data/index-content.md" %}
 <div class="posts">
-    {% for post in collections.projects | reverse %}
+    {% for post in collections.projects | reverse | removeHidden %}
     <article class="post" data-input-path="{{ post.filePathStem }}">
         <img src="{{post.data.pic}}">
         <time class="post-date" datetime="{{ post.date | dateISO }}">{{ post.date | dateFormat('LL') }}</time>

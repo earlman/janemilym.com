@@ -1,5 +1,3 @@
 module.exports = {
-
-  limit: (array, count) => array.slice(0, count)
-
+   limit: (array, count) => array.slice(0, count),
 };
