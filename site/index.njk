@@ -1,20 +1,23 @@
 {% extends "default.njk" %}
 
 {% block content %}
-{% renderFile "./site/_data/index-content.md" %}
-<div class="posts">
+<div class="index-content">
+    {% renderFile "./site/_data/index-content.md" %}
+</div>
+<div class="posts featured-projects">
+    <h2>Projects</h2>
     {% for post in collections.projects | reverse | removeHidden %}
     <article class="post" data-input-path="{{ post.filePathStem }}">
         <img src="{{post.data.pic}}">
-        <time class="post-date" datetime="{{ post.date | dateISO }}">{{ post.date | dateFormat('LL') }}</time>
+        <p class="meta">
+            <time datetime="{{ post.date | dateISO }}">{{ post.date | dateFormat('LL') }}</time>
+            {% if "post.data.file" %}|
+            <a target="_blank" href="{{ post.data.file }}">Download</a>
+            {% endif %}
+        </p>
         <h2 class="post-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
         {{ post.content | safe | trim }}
-
-        {% if "post.data.file" %}
-        <a target="_blank" href="{{ post.data.file }}">Download</a>
-        {% endif %}
     </article>
-
     {% endfor %}
 </div>
 {% endblock %}

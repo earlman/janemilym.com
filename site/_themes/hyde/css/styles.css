@@ -83,7 +83,7 @@ code {
 }
 
 .post-title {
-   margin-bottom: 2rem;
+   margin-bottom: var(--space-xs);
 }
 
 .social {
@@ -114,4 +114,24 @@ code {
    max-width: 300px;
    margin: auto;
    margin-bottom: 2rem;
+}
+
+.featured-projects h2 {
+   margin-bottom: var(--space-sm);
+}
+
+.index-content {
+   margin-bottom: var(--space-lg);
+}
+
+.post {
+   margin-bottom: var(--space-lg);
+}
+
+.post .post-tile {
+   color: var(--color-heading);
+}
+
+.post .meta {
+   color: var(--color-heading);
 }
