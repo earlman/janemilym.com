@@ -58,10 +58,7 @@ module.exports = (eleventyConfig) => {
          imgOptions: {
             widths: [720, 1080, 1440, 1800],
             urlPath: "/images/",
-            outputDir:
-               process.env.NODE_ENV === "production"
-                  ? "./dist/images"
-                  : "./public/images",
+            outputDir: "./dist/images",
          },
          globalAttributes: {
             loading: "lazy",
@@ -177,9 +174,7 @@ module.exports = (eleventyConfig) => {
    eleventyConfig.addPassthroughCopy({
       "site/static": ".",
       "site/admin/config.yml": "admin/config.yml",
-   }); // Only one per destination folder, next is better for dev
-
-   eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+   });
 
    // Globals
    eleventyConfig.addGlobalData(
@@ -194,7 +189,7 @@ module.exports = (eleventyConfig) => {
       dir: {
          input: "./site",
          includes: `_themes/${theme}/layouts`,
-         output: "./public",
+         output: "./dist",
       },
    };
 };
