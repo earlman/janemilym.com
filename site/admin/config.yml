@@ -98,6 +98,6 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Featured Image", name: "pic", widget: "image", required: false}
+      - {label: "Featured Image", name: "pic", widget: "image", required: false, pattern: ["[^\w.-]", "image filename must be URL-friendly"]}
       - {label: "File", name: "file", widget: "file", required: false}
-      - {label: "Description", name: "body", widget: "string", required: false}
+      - {label: "Description", name: "body", widget: "markdown", required: false}
