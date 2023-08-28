@@ -101,4 +101,4 @@ collections:
       - {label: "Featured Image", name: "pic", widget: "image", required: false}
       - {label: "File", name: "file", widget: "file", required: false}
       - {label: "Description", name: "body", widget: "markdown", required: false}
-      - {label: "Hidden", name: "hidden", widget: "boolean"}
+      - {label: "Hidden", name: "hidden", widget: "boolean", required: false}
