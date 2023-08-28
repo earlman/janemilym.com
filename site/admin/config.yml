@@ -97,6 +97,7 @@ collections:
     folder: "site/projects"
     create: true
     fields:
-      - {label: "Profile Picture", name: "pic", widget: "image", required: false}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "body", widget: "string"}
+      - {label: "Featured Image", name: "pic", widget: "image", required: false}
+      - {label: "File", name: "file", widget: "file", required: false}
+      - {label: "Description", name: "body", widget: "string", required: false}
