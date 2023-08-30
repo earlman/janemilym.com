@@ -1,9 +1,1 @@
-In the heart of Baltimore, Jan Emily, a Ph.D. student at John Hopkins, was on the brink of a breakthrough. The ARCADE lab buzzed with energy.
-
-With a background in Biomedical Engineering, Jan had always been fascinated by the intersection of tech and biology. The lab was her playground.
-
-Her latest project? A robotic system that could perform echocardiogram procedures with unparalleled precision. The idea stemmed from her M.S. thesis.
-
-But this wasn't just any robot. It was designed with end effectors Jan had 3D-printed, compatible with the advanced KUKA robot software.
-
-One evening, as the sun set over the city, Jan received an email from the Filipino Googler Network. An invitation to a tech summit in Silicon Valley.
+I am currently a PhD student at Johns Hopkins University in the Advanced Robotics and Computationally Augmented Environments [ARCADE research group](https://arcade.cs.jhu.edu/), led by [Dr. Mathias Unberath](https://mathiasunberath.github.io/). My research interests lie at the intersection of computer vision and medical imaging, towards developing computationally intelligent and collaborative clinical systems. In 2022, I completed a M.S. in Biomedical Engineering from Saint Louis University advised by [Dr. Andrew Hall](https://www.slu.edu/science-and-engineering/academics/biomedical-engineering/faculty/hall-andrew.php). In my free time, I like to crochet, paint, and hang out with cat, Miso.
