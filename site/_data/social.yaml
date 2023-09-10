@@ -1,7 +1,9 @@
 links:
-  - image: /img/icon-instagram.svg
-    url: https://www.instagram.com/janemilym/
-  - image: /img/icon-google.svg
-    url: https://www.google.com/
+  - url: https://scholar.google.com/citations?user=GuSPmr0AAAAJ&hl=en&oi=ao
+    image: /img/google_scholar_icon.png
+  - url: https://orcid.org/0009-0005-5941-0535
+    image: /img/orcid_icon.png
+  - url: https://github.com/janemilym
+    image: /img/github_icon.png
   - url: https://www.linkedin.com/in/jan-mangulabnan/
     image: /img/icon-linkedin.svg
