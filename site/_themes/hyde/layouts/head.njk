@@ -5,21 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="generator" content="{{ eleventy.generator }}" built="{{ build.time | dateISO }}">
 
-  <link rel="shortcut icon" href="/img/favicon-32x32.png" sizes="32x32">
-  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+    <link rel="shortcut icon" href="/img/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="{{ '/_themes/_styles/index.css' }}" />
-  {% if isProduction %}<style>{% include "../css/styles.min.css" %}</style>{% else %}<link rel="stylesheet" href="/css/styles.min.css">{% endif %}
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feeds.xml">
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Old+Standard+TT&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
+    <link rel="stylesheet" href="{{ '/_themes/_styles/index.css' }}"/>
+    {% if isProduction %}
+      <style>
+        {% include "../css/styles.min.css" %}
+      </style>
+    {% else %}<link rel="stylesheet" href="/css/styles.min.css">{% endif %}
+    {# add font here + change css #}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feeds.xml">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Old+Standard+TT&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+      :root {
         --color-sidebar: {{theme.sidebarColor}};
         --color-heading: {{theme.headingColor}};
         --font-secondary: "Crimson Text";
         --font-primary: "Open Sans";
-    }
-  </style>
-  {% generateOGImage site.name, site.title, undefined, theme.sidebarColor, theme.headingColor %}
-</meta>
+      }
+    </style>
+    {% generateOGImage site.name,
+    site.title,
+    undefined,
+    theme.sidebarColor,
+    theme.headingColor %}
+  </meta>
 </head>
