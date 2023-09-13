@@ -62,10 +62,8 @@ code {
 .copyright {
    right: 2rem;
    opacity: 0.5;
-   margin-right: 1rem;
    margin-bottom: 1.5rem;
    font-size: 0.8rem;
-   display: flex;
    align-items: center;
 }
 
@@ -134,6 +132,16 @@ code {
 
 .social img {
    max-width: 48px;
+}
+
+.content {
+   padding-left: var(--space-sm);
+   padding-right: var(--space-sm);
+}
+
+.copyright-container {
+   padding-left: var(--space-xs);
+   padding-right: var(--space-xs);
 }
 
 @media (min-width: 48em) {
