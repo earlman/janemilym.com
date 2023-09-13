@@ -148,6 +148,11 @@ code {
    .sidebar {
       width: 32%;
    }
+   .content {
+      width: 60%;
+      margin-left: var(--left-content-margin);
+      margin-right: var(--left-content-margin);
+   }
 }
 
 @media (min-width: 64em) {
@@ -157,7 +162,7 @@ code {
 
    .content {
       margin-left: var(--left-content-margin);
-      max-width: 1200px;
+      max-width: 60%;
    }
 
    .content p {

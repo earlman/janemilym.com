@@ -94,6 +94,17 @@ collections:
                 media_library:
                   config:
                     multiple: false
+      - name: "publications"
+        label: "Publications"
+        file: "site/_data/publications.yaml"
+        fields:
+          - label: "Publications"
+            name: "publications"
+            widget: "list"
+            fields:
+              - label: "content"
+                name: "content"
+                widget: "markdown"
   - name: "project"
     label: "Projects"
     folder: "site/projects"
