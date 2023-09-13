@@ -4,7 +4,7 @@
 <div class="index-content">
     {% renderFile "./site/_data/index-content.md" %}
 </div>
-<div class="posts featured-projects">
+{#<div class="posts featured-projects">
     <h2>Projects</h2>
     {% for post in collections.projects | reverse | removeHidden %}
     <article class="post" data-input-path="{{ post.filePathStem }}">
@@ -19,5 +19,5 @@
         {{ post.content | safe | trim }}
     </article>
     {% endfor %}
-</div>
+</div>#}
 {% endblock %}
