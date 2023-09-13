@@ -6,6 +6,19 @@
     {% renderFile "./site/_data/index-content.md" %}
 </div>
 
+<div class="publications">
+    <h2>Publications</h2>
+    {% for p in publications.publications %}
+    <div class="publication-item">
 
+        <p>
+            {% if p.url %}
+            <a target="_blank" class="file" href="{{ post.data.file }}"><img src="/img/icon-file.svg"
+                    alt="Link to Publication"></a>
+            {% endif %}{{ p.content | safe }}
+        </p>
+    </div>
+    {% endfor %}
+</div>
 
 {% endblock %}

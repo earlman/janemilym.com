@@ -171,5 +171,24 @@ code {
 }
 
 .index-content {
-   font-size: 20px;
+   font-size: var(--d-lg);
+}
+
+.publication-item {
+   margin-top: var(--space-sm);
+}
+
+.publication-item p {
+   margin-bottom: 0;
+}
+
+.publication-item .file {
+   height: 1.25em;
+   margin-right: var(--space-3xs);
+   display: inline-block;
+}
+
+.publication-item .file img {
+   width: 100%;
+   margin: 0;
 }

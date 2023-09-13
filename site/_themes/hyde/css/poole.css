@@ -87,7 +87,7 @@ h6 {
    margin-bottom: 0.5rem;
    font-weight: bold;
    line-height: 1.25;
-   color: #313131;
+   color: var(--color-heading);
    text-rendering: optimizeLegibility;
 }
 h1 {
