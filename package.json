@@ -20,7 +20,7 @@
     "start": "NODE_ENV=development concurrently -c auto npm:dev:* --kill-others",
     "prestart": "rm -rf ./dist",
     "dev:11ty": "eleventy --serve --incremental --quiet",
-    "dev:css": "postcss site/_themes/$npm_package_config_theme/css/styles.css -o dist/css/styles.min.css -w",
+    "dev:css": "postcss site/_themes/hyde/css/styles.css -o dist/css/styles.min.css -w",
     "build": "npm run build:css && npm run build:11ty",
     "prebuild": "rm -rf ./dist",
     "build:11ty": "NODE_ENV=production eleventy --output dist --pathprefix $PATHPREFIX",
