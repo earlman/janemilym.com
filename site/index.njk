@@ -13,8 +13,7 @@
 
         <p>
             {% if p.url %}
-            <a target="_blank" class="file" href="{{ post.data.file }}"><img src="/img/icon-file.svg"
-                    alt="Link to Publication"></a>
+            <a target="_blank" class="file" href="{{ post.data.file }}">{% include "icon-file.svg" %}</a>
             {% endif %}{{ p.content | safe }}
         </p>
     </div>

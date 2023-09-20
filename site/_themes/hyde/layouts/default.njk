@@ -6,6 +6,18 @@
 
   {% include "sidebar.njk" %}
 
+  <style>
+    @media (min-width: 64em) {
+      .content {
+        padding-top: var(--space-2xl);
+        margin-bottom: var(--space-md);
+      }
+    }
+
+    h1 {
+      overflow-wrap: normal;
+    }
+  </style>
   <div role="main" class="content container">
     {% block content %}{{ content | safe }}{% endblock %}
   </div>

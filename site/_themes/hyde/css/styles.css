@@ -105,7 +105,6 @@ code {
 
 .profile_pic {
    width: 100%;
-   max-width: 300px;
    margin: auto;
    margin-bottom: 2rem;
 }
@@ -148,6 +147,19 @@ code {
    .sidebar {
       width: 32%;
    }
+
+   .sidebar-sticky {
+      right: var(--space-md);
+      bottom: var(--space-md);
+      left: var(--space-md);
+      padding: 0;
+   }
+
+   .sidebar-sticky img {
+      margin-left: 0;
+      margin-right: 0;
+   }
+
    .content {
       width: 60%;
       margin-left: var(--left-content-margin);
@@ -156,13 +168,26 @@ code {
 }
 
 @media (min-width: 64em) {
+   :root {
+      --left-content-margin: 37%;
+   }
+
+   .sidebar-sticky {
+      right: var(--space-lg);
+      bottom: var(--space-lg);
+      left: var(--space-lg);
+      padding: 0;
+   }
    .copyright-container {
       margin-left: var(--left-content-margin);
+      padding-left: 0;
    }
 
    .content {
       margin-left: var(--left-content-margin);
       max-width: 60%;
+      padding-left: 0;
+      padding-bottom: 0;
    }
 
    .content p {
@@ -186,6 +211,10 @@ code {
    height: 1.25em;
    margin-right: var(--space-3xs);
    display: inline-block;
+}
+
+.publication-item svg {
+   fill: #a5a5a5;
 }
 
 .publication-item .file img {
