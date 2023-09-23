@@ -105,9 +105,9 @@ collections:
               - label: "content"
                 name: "content"
                 widget: "markdown"
-              - label: "File",
-                name: "file", 
-                widget: "file", 
+              - label: "File"
+                name: "file"
+                widget: "file" 
                 required: false
 
   - name: "project"
