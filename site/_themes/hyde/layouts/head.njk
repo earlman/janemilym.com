@@ -7,27 +7,29 @@
   appleIconBgColor = theme.accentColor %}
   <meta name="generator" content="{{ eleventy.generator }}" built="{{ build.time | dateISO }}">
 
-    <link rel="stylesheet" href="{{ '/_themes/_styles/index.css' }}"/>
-    {% if isProduction %}
-      <style>
-        {% include "../css/styles.min.css" %}
-      </style>
-    {% else %}<link rel="stylesheet" href="/css/styles.min.css">{% endif %}
-    {# add font here + change css #}
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feeds.xml">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Old+Standard+TT&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/_themes/_styles/index.css' }}"/>
+  {% if isProduction %}
     <style>
-      :root {
-        --color-sidebar: {{theme.sidebarColor}};
-        --color-heading: {{theme.headingColor}};
-        --font-secondary: "Crimson Text";
-        --font-primary: "Open Sans";
-      }
+      {% include "../css/styles.min.css" %}
     </style>
-    {% generateOGImage site.name,
+  {% else %}<link rel="stylesheet" href="/css/styles.min.css">{% endif %}
+  {# add font here + change css #}
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/feeds.xml">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Old+Standard+TT&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-sidebar: {{theme.sidebarColor}};
+      --color-heading: {{theme.headingColor}};
+      --font-secondary: "Crimson Text";
+      --font-primary: "Open Sans";
+    }
+  </style>
+  <meta property="og:image" content="/og_image.png">
+
+    {# generateOGImage site.name,
     site.title,
     undefined,
     theme.sidebarColor,
-    theme.headingColor %}
+    theme.headingColor #}
   </meta>
 </head>
