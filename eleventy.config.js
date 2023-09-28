@@ -1,6 +1,8 @@
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const sass = require("sass");
 const path = require("node:path");
+const faviconsPlugin = require("eleventy-plugin-gen-favicons");
+
 const browserslist = require("browserslist");
 const { transform, browserslistToTargets } = require("lightningcss");
 const yaml = require("js-yaml");
@@ -12,6 +14,11 @@ const glob = require("fast-glob"),
    theme = process.env.npm_package_config_theme;
 
 module.exports = (eleventyConfig) => {
+   eleventyConfig.addPlugin(faviconsPlugin, {
+      outputDir: "./dist",
+      manifestData: { name: "Jan Emily M" },
+   });
+
    // Merge data instead of overriding
    eleventyConfig.setDataDeepMerge(true);
 

@@ -1,38 +1,38 @@
 <!doctype html>
 <html lang="{{ site.locale }}">
-{% include "head.njk" %}
+  {% include "head.njk" %}
 
-<body class="theme-base-0b">
+  <body class="theme-base-0b">
 
-  {% include "sidebar.njk" %}
+    {% include "sidebar.njk" %}
 
-  <style>
-    @media (min-width: 64em) {
-      .content {
-        padding-top: var(--space-2xl);
-        margin-bottom: var(--space-md);
+    <style>
+      @media (min-width: 64em) {
+        .content {
+          padding-top: var(--space-2xl);
+          margin-bottom: var(--space-md);
+        }
       }
-    }
 
-    h1 {
-      overflow-wrap: normal;
-    }
-  </style>
-  <div role="main" class="content container">
-    {% block content %}{{ content | safe }}{% endblock %}
-  </div>
+      h1 {
+        overflow-wrap: normal;
+      }
+    </style>
+    <div role="main" class="content container">
+      {% block content %}{{ content | safe }}
+      {% endblock %}
+    </div>
 
-  {% block Scripts %}
-  {% endblock %}
+    {% block Scripts %}{% endblock %}
 
-  <div class="copyright-container">
-    <p class="copyright">
+    <div class="copyright-container">
+      <p class="copyright">
       &copy; {{site.time | dateFormat('YYYY')}} All rights reserved.
       Built with&nbsp;<a target="_blank" href="https://referral.foundations.design/janemilym"> Foundations
         Design</a>
-      {# <span class="logo">{% include "foundations-logo.svg" %}</span> #}
-    </p>
-  </div>
-</body>
+        {# <span class="logo">{% include "foundations-logo.svg" %}</span> #}
+      </p>
+    </div>
+  </body>
 
 </html>
