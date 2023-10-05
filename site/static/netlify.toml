@@ -1,0 +1,8 @@
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Allows for remote testing of the site
+    Access-Control-Allow-Origin = "https://lite.foundations.design"
+    # Add any other CORS-related headers if necessary, such as:
+    Access-Control-Allow-Methods = "GET, POST, PUT, DELETE, OPTIONS"
+    Access-Control-Allow-Headers = "Content-Type, Origin, Accept, X-Requested-With"
