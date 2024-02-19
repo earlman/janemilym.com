@@ -1,12 +1,11 @@
 publications:
-  - content: "B. D. Killeen, H. Zhang, **J. E. Mangulabnan** et al. “Pelphix:
+  - content: "B. D. Killeen, H. Zhang, J. E. Mangulabnan et al. “Pelphix:
       Surgical Phase Recognition from X-Ray Images in Percutaneous Pelvic
       Fixation,” in International Conference on Medical Image Computing and
       Computer-Assisted Intervention, 2023, pp. 133–143."
-    file: https://link.springer.com/chapter/10.1007/978-3-031-43996-4_13
-  - content: I. Hernández, R. D. Soberanis-Mukul, **J.E. Mangulabnan** et al.
+    url: https://link.springer.com/chapter/10.1007/978-3-031-43996-4_13
+  - content: I. Hernández, R. D. Soberanis-Mukul, J. E. Mangulabnan et al.
       “Investigating keypoint descriptors for camera relocalization in endoscopy
       surgery,” International Journal of Computer Assisted Radiology and
       Surgery, pp. 1–8, 2023.
-    url: /home
-    file: https://link.springer.com/article/10.1007/s11548-023-02918-x
+    url: https://link.springer.com/article/10.1007/s11548-023-02918-x
