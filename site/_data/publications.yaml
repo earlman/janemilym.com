@@ -1,18 +1,16 @@
-bold:
-- J. E. Mangulabnan
 publications:
-  - content: "J. E. Mangulabnan, R. D. Soberanis, T. Teufel et al. “A 
+  - content: "<b>J. E. Mangulabnan</b>, R. D. Soberanis, T. Teufel et al. “A 
     Quantitative Evaluation of Dense 3D Reconstruction of Sinus Anatomy 
     from Monocular Endoscopic Video,” arXiv preprint arXiv:2310.14364, 2023."
     url: "https://arxiv.org/abs/2310.14364"
     file: https://arxiv.org/abs/2310.14364
-  - content: "B. D. Killeen, H. Zhang, J. E. Mangulabnan et al. “Pelphix:
+  - content: "B. D. Killeen, H. Zhang, <b>J. E. Mangulabnan</b> et al. “Pelphix:
       Surgical Phase Recognition from X-Ray Images in Percutaneous Pelvic
       Fixation,” in International Conference on Medical Image Computing and
       Computer-Assisted Intervention, 2023, pp. 133–143."
     url: "https://link.springer.com/chapter/10.1007/978-3-031-43996-4_13"
     file: https://link.springer.com/chapter/10.1007/978-3-031-43996-4_13
-  - content: "I. Hernández, R. D. Soberanis-Mukul, J. E. Mangulabnan et al.
+  - content: "I. Hernández, R. D. Soberanis-Mukul, <b>J. E. Mangulabnan</b> et al.
       “Investigating keypoint descriptors for camera relocalization in endoscopy
       surgery,” International Journal of Computer Assisted Radiology and
       Surgery, pp. 1–8, 2023."
