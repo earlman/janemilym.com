@@ -1,12 +1,11 @@
 publications:
-  - 
-    content: Hernández, I., Soberanis-Mukul, R., Mangulabnan, J.E. et al.
+  - content: Hernández, I., Soberanis-Mukul, R., Mangulabnan, J.E. et al.
       Investigating keypoint descriptors for camera relocalization in endoscopy
       surgery. Int J CARS 18, 1135–1142 (2023).
       https://doi.org/10.1007/s11548-023-02918-x
+  - content: Hernández, I., Soberanis-Mukul, R., **Mangulabnan, J.E.** et al.
+      “Investigating keypoint descriptors for camera relocalization in endoscopy
+      surgery,” International Journal of Computer Assisted Radiology and
+      Surgery, pp. 1–8, 2023.
     url: /home
-  - 
-    content: Hernández, I., Soberanis-Mukul, R., Mangulabnan, J.E. et al.
-      Investigating keypoint descriptors for camera relocalization in endoscopy
-      surgery. Int J CARS 18, 1135–1142 (2023).
-      https://doi.org/10.1007/s11548-023-02918-x
+    file: https://link.springer.com/article/10.1007/s11548-023-02918-x
