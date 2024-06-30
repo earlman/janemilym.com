@@ -1,4 +1,20 @@
 publications:
+  - content: "<b>J. E. Mangulabnan</b>, R. D. Soberanis, T. Teufel et al., 
+    “An Endoscopic Chisel: Intraoperative Imaging Carves 3D Anatomical Models,” 
+    International Journal of Computer Assisted Radiology and Surgery, pp. 1–8, 2024."
+    url: "https://link.springer.com/article/10.1007/s11548-024-03151-w"
+    file: https://link.springer.com/article/10.1007/s11548-024-03151-w
+  - content: "R. D. Soberanis-Mukul, J. Cheng, <b>J. E. Mangulabnan</b> et al. 
+    “GSAM+ Cutie: Text-Promptable Tool Mask Annotation for Endoscopic Video,”
+    in Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 
+    2024, pp. 2388–2394."
+    url: "https://openaccess.thecvf.com/content/CVPR2024W/DCAMI/html/Soberanis-Mukul_GSAMCutie_Text-Promptable_Tool_Mask_Annotation_for_Endoscopic_Video_CVPRW_2024_paper.html"
+    file: https://openaccess.thecvf.com/content/CVPR2024W/DCAMI/html/Soberanis-Mukul_GSAMCutie_Text-Promptable_Tool_Mask_Annotation_for_Endoscopic_Video_CVPRW_2024_paper.html
+  - content: "T. Teufel, H. Shu, R. D. Soberanis, <b>J. E. Mangulabnan</b> et al., “OneSLAM to Map Them All: A Generalized Approach 
+    to SLAM for Monocular Endoscopic Imaging based on Tracking Any Point,” 
+    International Journal of Computer Assisted Radiology and Surgery, pp. 1–8, 2024."
+    url: "https://link.springer.com/article/10.1007/s11548-024-03171-6"
+    file: https://link.springer.com/article/10.1007/s11548-024-03171-6
   - content: "<b>J. E. Mangulabnan</b>, R. D. Soberanis, T. Teufel et al. “A 
     Quantitative Evaluation of Dense 3D Reconstruction of Sinus Anatomy 
     from Monocular Endoscopic Video,” arXiv preprint arXiv:2310.14364, 2023."
